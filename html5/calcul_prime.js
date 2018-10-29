@@ -6,6 +6,7 @@ onmessage = function(e){
 	else
 		if (e.data == "start"){
 		stopped= false;
+	}
 }
 function is_prim(n)
 {
@@ -24,6 +25,7 @@ for (var i = start_value; i<start_value + 1000; i++)
 	if (is_prim(i))
 		postMessage(i);
 	start_value +=1000;
+}
 }
 	if (start_value < 1e10)
 setTimeout(calculeaza_prime, 1 , start_value);
