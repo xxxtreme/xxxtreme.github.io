@@ -26,7 +26,6 @@ for (var i = start_value; i<start_value + 1000; i++)
 		postMessage(i);
 	start_value +=1000;
 }
-}
 	if (start_value < 1e10)
 setTimeout(calculeaza_prime, 1 , start_value);
 else
