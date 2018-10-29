@@ -39,4 +39,5 @@ function stop()
 	document.getElementById("id_stop_button").disabled=true;
 	
 	clearInterval(id_timer);
+	my_worker.postMessage("stop");
 }
