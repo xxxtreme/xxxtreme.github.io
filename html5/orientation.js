@@ -13,7 +13,7 @@ function  on_device_orientation(e)
 	var context = canvas.getContext("2d");
 
 	context.beginPath();
-	context.arc(canvas.width/2 + e.gamma / 90 *canvas.width/2 -R), canvas.height /2 + e.betta/90*(canvas.height/2-R),R,0,2*Math.PI)
+	context.arc(canvas.width/2 + e.gamma / 90 *canvas.width/2 -R), canvas.height /2 + e.betta/90*(canvas.height/2-R),R,0,2*Math.PI);
 	canvas.stroke(); 
 }
 //-----------
@@ -24,5 +24,5 @@ function on_device_motion(e)
 	document.getElementById("id_acc_z").innerHTML = e.accelerationIncludingGravity.z;
 	document.getElementById("id_acc_x").innerHTML = e.accelerationIncludingGravity.x;
 	document.getElementById("id_acc_y").innerHTML = e.accelerationIncludingGravity.y;
-	
+
 }
