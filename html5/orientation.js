@@ -1,4 +1,4 @@
-document.getElementById("id_bussiness_version").innerHTML="Logic version: 2018.10.11.05.0";
+document.getElementById("id_bussiness_version").innerHTML="Logic version: 2018.10.11.05.1";
 window.addEventListener("deviceorientation" , on_device_orientation);
 window.addEventListener("devicemotion" , on_device_motion);
 
