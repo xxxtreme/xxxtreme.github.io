@@ -1,7 +1,7 @@
 document.getElementById("id_bussiness_version").innerHTML="Logic version: 2018.11.12.3";
 document.getElementById("id_button").addEventListener("click", start);
-document.getElementById("id_canvas").addEventListener("touchstart", on_touch);
-document.getElementById("id_canvas").addEventListener("mousedown", on_touch);
+document.getElementById("id_video").addEventListener("touchstart", on_touch);
+document.getElementById("id_video").addEventListener("mousedown", on_touch);
 
 //---------
 function on_success(e)
