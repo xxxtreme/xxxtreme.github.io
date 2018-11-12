@@ -1,5 +1,5 @@
 document.getElementById("id_bussiness_version").innerHTML="Logic version: 2018.11.12.0";
-document.getElementById("id_button").addEventListener("cick", start);
+document.getElementById("id_button").addEventListener("click", start);
 
 
 //---------
@@ -17,6 +17,6 @@ function on_failure(e)
 function start()
 {
 	var c = {audio: true, video: true};
-	navigator.mediaDevices.getUserMedia().then(on_success).catch(on_failure);
+	navigator.mediaDevices.getUserMedia(c).then(on_success).catch(on_failure);
 }
 //---------
