@@ -1,4 +1,4 @@
-document.getElementById("id_bussiness_version").innerHTML="Logic version: 2018.11.26.4";
+document.getElementById("id_bussiness_version").innerHTML="Logic version: 2018.11.26.5";
 canvas.addEventListener("touchstart", on_touch_start);
 canvas.addEventListener("touchmove", on_touch_move);
 var canvas_bounding_rect = canvas.getBoundingClientRect();
