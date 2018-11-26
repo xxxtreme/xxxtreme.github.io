@@ -32,7 +32,7 @@ function on_touch_move(e)
 	e.preventDefault();
 	for (var i = 0; i < e.changedTouches.length; i++){
 		var j = 0;
-		for (var j = ; j< last_pos_array.length; j++)
+		for ( ; j< last_pos_array.length; j++)
 			if(last_pos_array[j].id == e.changedTouches[i].identifier)
 				break;
 
