@@ -21,7 +21,7 @@ function on_touch_start(e)
 						0 , 2*Math.PI);
 		context.stroke();
 			var last_pos = {x: e.changedTouches[i].pageX,
-							y:  e.changedTouches[i].pageY
+							y:  e.changedTouches[i].pageY,
 							id: e.changedTouches[i].identifier};
 
 			last_pos_array.push(last_pos);
