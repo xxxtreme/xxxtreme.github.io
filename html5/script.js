@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 	var weather = $("#weather");
 	/**
-	 * function that gets the gps coordinates
+	 * functia pentru coordonatele GPS
 	 */
 	function getLocation() {
 	  if (navigator.geolocation) {
@@ -15,9 +15,7 @@ $(document).ready(function(){
 	}
 
 	/**
-	 * function that gets weather info from api and displays the information on screen
-	 * @param  {[type]} position [description]
-	 * @return {[type]}          [description]
+	 *Functia API care afiseaza temperatura
 	 */
 	function showPosition(position) {
 	  	var longitude = position.coords.longitude;
@@ -36,15 +34,11 @@ $(document).ready(function(){
 		    	});
 		    }
 	  	});
-
-		// x.innerHTML = latitude; 
 		console.log(urlString);
 	}
 
 	/**
-	 * clicking the temp unit calculates degrees in F or C 
-	 * @param  {[type]} event) {	if         ($("#unit").text() [description]
-	 * @return {[type]}        [description]
+	 * schimbarea temperaturii din C in F si invers
 	 */
 	$("#unit").click(function(event) {
 		if ($("#unit").text() == "°C") {
@@ -62,7 +56,7 @@ $(document).ready(function(){
 	});
 
 	/**
-	 * display video from camera on screen
+	 * camera si dispozitivele ei 
 	 */
 	var videoElement = document.querySelector('video');
 	var videoSelect = document.querySelector('select#videoSource');
